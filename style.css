@@ -1,0 +1,203 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Tinos", serif;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+#Container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  background-color: rgba(128, 128, 128, 0.185);
+}
+.logo {
+  width: 100px;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+.nav-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: background-color 0.2s;
+}
+.item:hover {
+  background-color: rgb(184, 181, 181);
+}
+.item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+#home {
+  display: grid;
+  grid-template-columns: 65% 50%;
+}
+.home-details {
+  display: flex;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  color: white;
+}
+#username {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+#name {
+  color: darkseagreen;
+}
+.letter {
+  display: inline-block;
+  font-size: 3.5rem;
+  transition: transform 150ms;
+}
+.letter:hover {
+  transform: scale(1.5);
+  cursor: grab;
+}
+#userdetails > span {
+  font-weight: 600;
+}
+
+.home-img {
+  width: 26rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 6%;
+  transition: transform 100ms ease;
+}
+.home-img:hover {
+  transform: scale(1.1);
+}
+.avatar {
+  width: 100%;
+}
+.home-icons {
+  position: absolute;
+  width: 30rem;
+  height: 40em;
+}
+#mongo {
+  right: 60%;
+  top: 50%;
+}
+#express {
+  right: 50%;
+  top: 50%;
+}
+#react {
+  left: 50%;
+  top: 50%;
+}
+#node {
+  left: 50%;
+  top: 50%;
+}
+
+.icons {
+  position: absolute;
+  opacity: 0%;
+  transform: scale(0.5);
+  width: 4rem;
+  transition: all 500ms ease;
+  z-index: -1;
+}
+
+/* div of icons */
+
+.home-icons:hover #mongo {
+  right: 85%;
+  top: 30%;
+  opacity: 1;
+  transform: scale(1);
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0px;
+}
+
+.home-icons:hover #express {
+  right: 75%;
+  top: 0%;
+  opacity: 1;
+  transform: scale(1);
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0px;
+}
+
+.home-icons:hover #react {
+  left: 75%;
+  top: 10%;
+  opacity: 1;
+  transform: scale(1);
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0px;
+  box-shadow: 0px 0px 40px 20px rgb(248, 248, 248);
+}
+
+.home-icons:hover #node {
+  left: 85%;
+  top: 30%;
+  opacity: 1;
+  transform: scale(1);
+  background-color: rgb(135, 197, 126);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0px;
+  box-shadow: 0px 0px 40px 20px rgb(11, 80, 11);
+}
+#aboutme {
+  margin: 8% 8% 0% 8%;
+}
+.headings {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.subHead {
+  font-weight: 500;
+  color: darkseagreen;
+}
+.card1Container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+.card1 {
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(39, 38, 38);
+  box-shadow: 0px 0px 20px 10px rgb(33, 33, 33);
+}
