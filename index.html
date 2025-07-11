@@ -1,109 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- Fontawsome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Lavishly+Yours&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+FR+Trad:wght@100..400&family=Playwrite+MX+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="Container">
-      <nav>
-        <img class="logo" src="./assets/M-removebg-preview.png" alt="Manu" />
-        <ul class="nav-list">
-          <li class="nav-items"><a class="item" href="#home">Home</a></li>
-          <li class="nav-items"><a class="item" href="#aboutme">About</a></li>
-          <li class="nav-items"><a class="item" href="">Project</a></li>
-          <li class="nav-items"><a class="item" href="">Contact</a></li>
-        </ul>
-        <div></div>
-      </nav>
-      <section id="home">
-        <div class="home-details">
-          <h1 id="username">
-            Hello I'm, <br />
-            <span id="name">
-              <span class="letter">M</span><span class="letter">a</span
-              ><span class="letter">n</span><span class="letter">u</span>
-              <span class="letter">B</span><span class="letter">a</span
-              ><span class="letter">b</span><span class="letter">y</span
-              ><span class="letter">c</span><span class="letter">h</span
-              ><span class="letter">a</span><span class="letter">n</span>
-            </span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manu Babychan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- animation.css -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- aos animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="main-container">
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-items">
+          <a class="items" href="#home-section">Home</a>
+        </li>
+        <li class="nav-items">
+          <a class="items" href="#aboutme">About Me</a>
+        </li>
+        <li class="nav-items"><a class="items" href="#skill">Skills</a></li>
+        <li class="nav-items">
+          <a class="items" href="#projects">Projects</a>
+        </li>
+        <li class="nav-items">
+          <a class="items" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="home-section">
+      <div class="container-home">
+        <div class="home-content">
+          <h1 class="name">
+            Hello,<br />
+            I'm <span>Manu Babychan</span>
           </h1>
-          <p id="userdetails">
-            <span> Web Developer | MERN Stack Specialist</span> <br />
-            I craft responsive and scalable web applications using MongoDB,
-            Express.js, React.js, and Node.js with prior experience in Flutter.
+          <p class="tagline">
+            This is my official potfolio website to showcase my journey and
+            development in the ME(A)RN Stack
           </p>
+          <div class="brochure">
+            <a class="brochure-link" href="./assets/Manu Babychan CV.pdf" target="_blank" download>Download Resume</a>
+          </div>
         </div>
-        <div class="home-img">
-          <img class="avatar" src="./assets/me.png" alt="Manu Babychan" />
-          <!-- <div class="home-icons">
-            <div class="icon">
-              <img
-                id="mongo"
-                src="./assets/icons/mongo-removebg-preview.png"
-                alt=""
-                class="icons"
-              />
+        <img class="myImage  animate__animated animate__fadeInRight" src="./assets/me-animated-removebg-preview.png"
+          alt="Manu Babychan" />
+      </div>
+    </section>
+
+    <section id="aboutme" class="section">
+      <div class="container-aboutme">
+        <h2 class="main-head">About Me</h2>
+        <p class="secondry-head">Introduction</p>
+        <div class="about-me-content">
+          <div class="home-img">
+            <img class="imgme" src="./assets/me.png" alt="">
+          </div>
+          <div data-aos="fade-left">
+            <div class="home-desc">
+              <p>
+                I’m Manu Babychan — a full-stack developer focused on building
+                modern web applications using the MERN stack (MongoDB,
+                Express.js, React, and Node.js). I’m passionate about turning
+                ideas into fast, scalable, and responsive digital experiences
+                that combine clean code with thoughtful design. I enjoy
+                working across both front-end and back-end, ensuring
+                everything runs smoothly from the user interface to the server
+                logic. Whether it’s developing new features, optimizing
+                performance, or solving real-world problems, I love creating
+                apps that truly make an impact.
+              </p>
+              <div class="Information">
+                <div class="infox">
+                  <!-- font available in font-awsome website -->
+                  <i class="fa-solid fa-user"></i>
+                  <span>Manu Babychan</span>
+                </div>
+                <div class="infox">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>9447706386</span>
+                </div>
+                <div class="infox">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>manubabychan02@gmail.com</span>
+                </div>
+              </div>
             </div>
-            <div class="icon">
-              <img
-                id="express"
-                src="./assets/icons/express-removebg-preview.png"
-                alt=""
-                class="icons"
-              />
-            </div>
-            <div class="icon">
-              <img
-                id="react"
-                src="./assets/icons/react-removebg-preview.png"
-                alt=""
-                class="icons"
-              />
-            </div>
-            <div class="icon">
-              <img
-                id="node"
-                src="./assets/icons/node-removebg-preview.png"
-                alt=""
-                class="icons"
-              />
-            </div>
-             <img
-              id="flutter"
-              src="./assets/icons/flutter.png"
-              alt=""
-              class="icons"
-            /> -->
-          <!-- </div> -->
+          </div>
         </div>
-      </section>
-      <section id="aboutme">
-        <div class="headings">
-          <h2 class="mainHead">About Me</h2>
-          <p class="subHead">Introduction</p>
+      </div>
+    </section>
+
+    <section id="skill">
+      <div class="sectionHead">
+        <h2 class="main-head">Skills</h2>
+        <p class="secondry-head">My Skills</p>
+      </div>
+      <div class="skillContent">
+        <div data-aos="fade-right">
+          <div class="progressBar">
+            <!-- added animation aos for progress bar -->
+            <!-- Bar 1 -->
+            <div class="bars">
+              <h3 class="barHead">HTML</h3>
+              <span class="barPercent">80%</span>
+              <div class="baseBar"></div>
+              <div class="baseBar htmlBar">
+              </div>
+            </div>
+            <!-- Bar 2 -->
+            <div class="bars">
+              <h3 class="barHead">CSS</h3>
+              <span class="barPercent">80%</span>
+              <div class="baseBar"></div>
+              <div class="baseBar cssBar">
+              </div>
+            </div>
+            <!-- Bar 3 -->
+            <div class="bars">
+              <h3 class="barHead">JAVASCRIPT</h3>
+              <span class="barPercent">80%</span>
+              <div class="baseBar"></div>
+              <div class="baseBar jsBar" >
+              </div>
+            </div>
+            <!-- Bar 4 -->
+            <div class="bars">
+              <h3 class="barHead">React</h3>
+              <span class="barPercent">80%</span>
+              <div class="baseBar"></div>
+              <div class="baseBar reactBar" >
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card1Container"><div class="card1"></div></div>
-      </section>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </div>
-  </body>
+        <div class="skillImage" data-aos="flip-down">
+          <img src="./assets/icons/html-removebg-preview.png" alt="" class="iconskill"><img
+            src="./assets/icons/css-removebg-preview.png" alt="" class="iconskill"><img
+            src="./assets/icons/js-removebg-preview.png" alt="" class="iconskill"><img
+            src="./assets/icons/react-removebg-preview.png" alt="" class="iconskill">
+        </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="main-head">Projects</h2>
+      <div class="cards">
+        <div class="card1">
+          <h3>College Canteen App</h3>
+          <p>Flutter, Firebase, Razorpay, OTA updates & QR verification.</p>
+          <a href="https://github.com/Ghost-dot-coder/Infnite-Bites-CanteenApp-APK" target="_blank"
+            class="btn-small">Learn More</a>
+        </div>
+        <div class="card2">
+          <h3>Smart Water Monitoring</h3>
+          <p>IoT system with sensors, Firebase & live dashboard.</p>
+          <a href="https://github.com/Ghost-dot-coder/Smart-Water-Monitoring-and-control-App" target="_blank"
+            class="btn-small">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="sectionHead">
+        <h2 class="main-head">Contact</h2>
+        <p class="secondry-head">My Contact</p>
+      </div>
+      <div class="iconCollection">
+        <!-- linkdin -->
+        <div class="icon">
+          <a href="https://www.linkedin.com/in/manu-babychan/" target="_blank"><i
+              class="fa-brands fa-linkedin brands"></i></a>
+        </div>
+        <!-- Github -->
+        <div class="icon">
+          <a href="https://github.com/Ghost-dot-coder" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+        </div>
+        <!-- twitter -->
+        <div class="icon">
+          <a href="" target="_blank"><i class="fa-brands fa-twitter brands"></i></a>
+        </div>
+        <!-- Instagram -->
+        <div class="icon">
+          <a href="" target="_blank"><i class="fa-brands fa-instagram brands"></i></a>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container">
+        <p>© 2025 Manu Babychan</p>
+        <div class="icon upArrow">
+          <a href="#main-container"><i class="fa-solid fa-angle-up brands"></i></a>
+        </div>
+      </div>
+    </section>
+
+    </section>
+  </div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </html>

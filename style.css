@@ -1,203 +1,392 @@
+/* Reset & base setup */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Tinos", serif;
 }
-body {
+
+#main-container {
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  color: #ffffff;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  line-height: 1.2;
+}
+
+/* nav Bar */
+
+nav {
+  background-color: #928dab91;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-items {
+  list-style: none;
+  padding: 1rem 0px 1rem 1.5rem;
+}
+.items {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.nav-items:hover .items {
+  text-decoration: underline 0.2rem;
+}
+.container-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 0rem 0 3rem;
+}
+
+/* Home Section */
+
+#home-section {
+  padding-top: 8.5rem;
+  color: #fff;
+  text-align: center;
+}
+.myImage {
+  width: 25rem;
+}
+.name {
+  font-size: 2.8rem;
+}
+.name > span {
+  color: rgb(189, 47, 47);
+  font-size: 4rem;
+}
+.tagline {
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+.contact-links a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.contact-links a:hover {
+  text-decoration: underline;
+}
+.home-content {
+  text-align: left;
+}
+.brochure-link {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px;
+  transition: background-color 300ms, color 100ms;
+}
+.brochure-link:hover {
   background-color: black;
   color: white;
 }
 
-#Container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+/* About me Section */
+#aboutme{
+  margin-top: 5%;
 }
-nav {
+.secondry-head,
+.main-head {
+  font-size: 1.5rem;
+}
+.main-head {
+  text-align: center;
+  padding-top: 5rem;
+}
+.secondry-head {
+  text-align: center;
+}
+.about-me-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 4% 8% 0% 8%;
+}
+
+.imgme{
+  padding-left: 10rem;
+}
+
+.home-desc {
+  margin-top: 5%;
+  width: 100%;
+  background-color: white;
+  color: #1f1c2c;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px 0px #1f1c2c;
+  border-radius: 10px;
+  transition: box-shadow 250ms;
+}
+.home-desc:hover {
+  box-shadow: 0px 0px 40px 0px #1f1c2c;
+}
+.home-desc > p {
+  text-align: justify;
+}
+.Information {
+  margin-top: 1.3rem;
+}
+.infox {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.infox > span {
+  margin-left: 1rem;
+}
+/* Skill Section */
+
+#skill {
+  margin: 0% 5% 0% 8%;
+  padding-top: 2%;
+  padding-bottom: 8%;
+}
+.skillContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.progressBar {
+  background-color: white;
+  padding: 2rem;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #1f1c2c;
+  transition: box-shadow 250ms;
+}
+.progressBar:hover {
+  box-shadow: 0px 0px 40px 0px #1f1c2c;
+}
+
+.bars {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
-  background-color: rgba(128, 128, 128, 0.185);
+  position: relative;
+  padding: 1rem 0px;
 }
-.logo {
-  width: 100px;
+.barHead,
+.barPercent {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
-.nav-list {
-  display: flex;
-  justify-content: flex-start;
-  height: 100%;
-}
-.nav-items {
-  height: 100%;
+.baseBar {
+  position: absolute;
   width: 100%;
-  list-style: none;
-  transition: background-color 0.2s;
+  height: 0.5rem;
+  background-color: black;
+  border-radius: 10px;
+  bottom: 0px;
 }
-.item:hover {
-  background-color: rgb(184, 181, 181);
+.htmlBar {
+  width: 80%;
+  background-color: #868686;
 }
-.item {
-  display: flex;
-  align-items: center;
+.cssBar {
+  width: 80%;
+  background-color: #868686;
+}
+.jsBar {
+  width: 80%;
+  background-color: #868686;
+}
+.reactBar {
+  width: 80%;
+  background-color: #868686;
+}
+.skillImage {
+  margin-top: 20%;
+  margin-left: 25%;
   height: 100%;
-  width: 100%;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  padding-right: 15px;
-  padding-left: 15px;
 }
-#home {
+.iconskill {
+  width: 7rem;
+  padding-left: 2rem;
+  transition: animation 250ms;
+}
+.iconskill:hover{
+    animation: iconani 10s;
+
+}
+@keyframes iconani {
+  0% {
+    top: 100%;
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(30deg);
+    transform: scale(1.25);
+  }
+  40% {
+    transform: rotate(30deg);
+    transform: scale(1.25);
+  }
+
+  80% {
+    transform: rotate(30deg);
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* project Section */
+
+#projects .cards {
   display: grid;
-  grid-template-columns: 65% 50%;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 5rem 2rem 0rem 2rem;
 }
-.home-details {
-  display: flex;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  flex-direction: column;
-  text-align: justify;
-  justify-content: center;
+
+.card1,
+.card2 {
+  display: grid;
+  align-items: center;
+  background: rgba(184, 182, 182, 0.2);
   color: white;
+  padding: 1.5rem;
+  height: 15rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.5s, background 0.3s, box-shadow 250ms;
+  box-shadow: 0px 0px 5px 0px #1f1c2c;
 }
-#username {
-  padding-bottom: 1rem;
+
+.card1:hover {
+  transform: translateY(-10px) rotate(-1deg);
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 40px 0px #1f1c2c;
+
+  color: black;
+}
+.card2:hover {
+  transform: translateY(-10px) rotate(1deg);
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 40px 0px #1f1c2c;
+
+  color: black;
+}
+.card1 > a {
+  color: #000000;
+}
+.card2 > a {
+  color: #000000;
+}
+/* contact section */
+
+#contact {
+  margin: 0% 8% 0px 8%;
+  padding-top: 5%;
+}
+.iconCollection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0px 10px;
+}
+
+.brands {
+  color: black;
   font-size: 2rem;
 }
-#name {
-  color: darkseagreen;
+.icon:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 255, 255),
+    rgb(0, 0, 0)
+  );
+  animation: rotation 5s;
 }
-.letter {
-  display: inline-block;
-  font-size: 3.5rem;
-  transition: transform 150ms;
+/* animation: in the main element write the name of animation and duration */
+.icon:hover .brands {
+  color: white;
+  animation: rotation 3s;
 }
-.letter:hover {
-  transform: scale(1.5);
-  cursor: grab;
-}
-#userdetails > span {
-  font-weight: 600;
-}
-
-.home-img {
-  width: 26rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-top: 6%;
-  transition: transform 100ms ease;
-}
-.home-img:hover {
-  transform: scale(1.1);
-}
-.avatar {
-  width: 100%;
-}
-.home-icons {
-  position: absolute;
-  width: 30rem;
-  height: 40em;
-}
-#mongo {
-  right: 60%;
-  top: 50%;
-}
-#express {
-  right: 50%;
-  top: 50%;
-}
-#react {
-  left: 50%;
-  top: 50%;
-}
-#node {
-  left: 50%;
-  top: 50%;
+/* create a animtion like below using same name defined in main element. always use 0 to 100% 
+to specify each keyframe of animation */
+@keyframes rotation {
+  0% {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(-30deg);
+  }
+  40% {
+    transform: rotate(30deg);
+    transform: scale(1.25);
+  }
+  60% {
+    transform: rotate(-30deg);
+    transform: scale(1.25);
+  }
+  80% {
+    transform: rotate(30deg);
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1.25);
+  }
 }
 
-.icons {
-  position: absolute;
-  opacity: 0%;
-  transform: scale(0.5);
-  width: 4rem;
-  transition: all 500ms ease;
-  z-index: -1;
-}
-
-/* div of icons */
-
-.home-icons:hover #mongo {
-  right: 85%;
-  top: 30%;
-  opacity: 1;
-  transform: scale(1);
-  background-color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  padding: 0px;
-}
-
-.home-icons:hover #express {
-  right: 75%;
-  top: 0%;
-  opacity: 1;
-  transform: scale(1);
-  background-color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  padding: 0px;
-}
-
-.home-icons:hover #react {
-  left: 75%;
-  top: 10%;
-  opacity: 1;
-  transform: scale(1);
-  background-color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  padding: 0px;
-  box-shadow: 0px 0px 40px 20px rgb(248, 248, 248);
-}
-
-.home-icons:hover #node {
-  left: 85%;
-  top: 30%;
-  opacity: 1;
-  transform: scale(1);
-  background-color: rgb(135, 197, 126);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  padding: 0px;
-  box-shadow: 0px 0px 40px 20px rgb(11, 80, 11);
-}
-#aboutme {
-  margin: 8% 8% 0% 8%;
-}
-.headings {
+/* Footer */
+#footer {
+  margin-top: 10rem;
   text-align: center;
-  font-size: 1.2rem;
+  padding: 1.7rem 0;
+  background: #000000;
+  font-size: 0.9rem;
+  color: white;
 }
-.subHead {
-  font-weight: 500;
-  color: darkseagreen;
+.upArrow {
+  background-color: white;
+  float: right;
+  margin: -40px 20px 20px 0px;
 }
-.card1Container {
-  display: flex;
-  justify-content: center;
-  margin-top: 3%;
+html {
+  scroll-behavior: smooth;
 }
-.card1 {
-  width: 100%;
-  height: 80vh;
-  background-color: rgb(39, 38, 38);
-  box-shadow: 0px 0px 20px 10px rgb(33, 33, 33);
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(145, 145, 145);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 10px;
 }
