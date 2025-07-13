@@ -5,7 +5,7 @@
   font-family: "PT Serif", serif;
 }
 
-#main-container {
+body {
   position: relative;
   font-family: "Segoe UI", sans-serif;
   color: #ffffff;
@@ -22,6 +22,7 @@ nav {
   z-index: 1000;
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
+  box-shadow: 0px 0px 10px 0px #1f1c2c;
 }
 .nav-list {
   display: flex;
@@ -134,7 +135,7 @@ nav {
 .home-desc {
   margin-top: 5%;
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: #1f1c2c;
   padding: 2rem;
   box-shadow: 0px 0px 10px 0px #1f1c2c;
@@ -205,59 +206,55 @@ nav {
   border-radius: 10px;
   bottom: 0px;
 }
+
+/* skills progress */
+
 .htmlBar {
-  width: 80%;
+  width: 70%;
   background-color: #868686;
 }
 .cssBar {
-  width: 80%;
+  width: 70%;
   background-color: #868686;
 }
 .jsBar {
-  width: 80%;
+  width: 40%;
   background-color: #868686;
 }
 .reactBar {
+  width: 20%;
+  background-color: #868686;
+}
+.flutterBar {
   width: 80%;
   background-color: #868686;
 }
+.pythonBar {
+  width: 60%;
+  background-color: #868686;
+}
+.cBar {
+  width: 65%;
+  background-color: #868686;
+}
+
 .skillImage {
-  margin-top: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-left: 25%;
-  height: 100%;
 }
 .iconskill {
   width: 7rem;
   padding-left: 2rem;
-  transition: animation 250ms;
+  padding-bottom: 2.3rem;
+  transform: scale(1);
+  transition: transform 150ms;
 }
 .iconskill:hover {
-  animation: iconani 10s;
+  transform: scale(1.2);
 }
-@keyframes iconani {
-  0% {
-    top: 100%;
-    transform: rotate(30deg);
-  }
-  20% {
-    transform: rotate(30deg);
-    transform: scale(1.25);
-  }
-  40% {
-    transform: rotate(30deg);
-    transform: scale(1.25);
-  }
-
-  80% {
-    transform: rotate(30deg);
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* project Section */
 
 #projects .cards {
   display: grid;
@@ -379,6 +376,9 @@ nav {
   float: right;
   margin: -40px 20px 20px 0px;
 }
+
+/* scrollbar */
+
 html {
   scroll-behavior: smooth;
 }
@@ -392,4 +392,7 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: #000000;
   border-radius: 10px;
+}
+
+@media (max-width: 760px) {
 }
